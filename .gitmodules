@@ -1,0 +1,3 @@
+[submodule "lib/tutorial-maker"]
+	path = lib/tutorial-maker
+	url = https://github.com/openteens/tutorial-maker.git
