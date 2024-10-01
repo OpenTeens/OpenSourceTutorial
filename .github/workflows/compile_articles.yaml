@@ -39,11 +39,10 @@ jobs:
       - name: Render articles
         run: python script/render_all.py
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./tutorial/build
+          path: "tutorial/build/"
   
   # Deployment job
   deploy:
