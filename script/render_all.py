@@ -1,5 +1,10 @@
 import json
 import jinja2
+import os
+
+
+print(os.getcwd())
+print(os.listdir())
 
 
 map_json = json.load(open("tutorial/build/map.json"))
