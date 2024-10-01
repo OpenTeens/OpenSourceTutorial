@@ -2,11 +2,8 @@ import os
 import hashlib
 import json
 
-
-print(os.getcwd())
-print(os.listdir())
-
-
+if not os.path.exists("tutorial/build"):
+    os.makedirs("tutorial/build")
 
 all_tutorials = []
 for root, dirs, files in os.walk("tutorial/src"):
