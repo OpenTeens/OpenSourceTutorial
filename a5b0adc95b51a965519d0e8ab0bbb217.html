@@ -1,0 +1,222 @@
+<div class="navtree"><li class='collapsed' onclick='expand_navt(this)'>section1<ul><li class='collapsed url' onclick="goto_url('351170b8f392a3cb6f296c329ea80ef1.html')">welcome.md</li></ul></li><li class='collapsed' onclick='expand_navt(this)'>section3<ul><li class='collapsed url' onclick="goto_url('e5571f748a1280673e7fa6428268981c.html')">welcome.md</li></ul></li><li class='active' onclick='expand_navt(this)'>section2<ul><li class='active url' onclick="goto_url('a5b0adc95b51a965519d0e8ab0bbb217.html')">welcome2.md</li></ul></li></div>
+<div class="article">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+        <style>.component.choose {
+    user-select: none;
+}
+
+.component.choose label {
+    display: inline-block;
+    cursor: pointer;
+    width: 60%;
+}
+
+.choose_bg>svg {
+    top: -4em;
+    height: 12rem;
+    opacity: 0.3;
+    position: relative;
+    float: right;
+    display: none;
+}body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+article {
+    padding: 20px;
+}
+
+.component {
+    max-width: calc(100% - 100px);
+    margin: 30px;
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #0003, 0 1px 5px 0 #0003;
+    border-radius: 8px;
+    background-color: #aaaaaa26;
+}</style>
+        <script>window.comp = {};
+window.comp.choose = {};
+window.comp.choose.answer = {};
+
+window.comp.choose.check = function(comp_id) {
+    var component = document.getElementById(comp_id);
+    var svg_correct = document.getElementById(`${comp_id}-bg-correct`);
+    var svg_wrong = document.getElementById(`${comp_id}-bg-wrong`);
+
+    var answer = window.comp.choose.answer[comp_id];
+    var userAnswer = [];
+
+    document.getElementsByName(`${comp_id}-choice`).forEach((element) => {
+        if (element.checked) {
+            userAnswer.push(element.value);
+        }
+    });
+
+    if (listeq(answer, userAnswer)) {
+        component.style.backgroundColor = "#2ea04326";
+        svg_correct.style.display = "block";
+        svg_wrong.style.display = "none";
+    } else {
+        component.style.backgroundColor = "#ff000026";
+        svg_correct.style.display = "none";
+        svg_wrong.style.display = "block";
+    }
+}
+
+function listeq(a, b) {
+    if (a.length != b.length) {
+        return false;
+    }
+
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] != b[i]) {
+            return false;
+        }
+    }
+
+    return true;
+}</script>
+    </html>
+    </head>
+    <body>
+        <article class="markdown-body">
+            <h1>Hello world</h1>
+<h2>Chapter 1: Introduction</h2>
+<p>Welcome to the second welcome of Section2!</p>
+<!--
+PARAMETERS:
+    comp-choose-1eb24dfecc9e8dea
+    ['When is the best time to plant a tree?', '- [ ] Spring\n- [*] 20 years ago\n- [ ] Fall\n- [ ] Winter']
+
+    When is the best time to plant a tree?
+    [('Spring', False), ('20 years ago', True), ('Fall', False), ('Winter', False)]
+    ['20 years ago']
+    radio
+-->
+
+<div class='component card choose' id=comp-choose-1eb24dfecc9e8dea>
+    <div class='choose_question'>
+        <p>When is the best time to plant a tree?</p>
+    </div>
+    <div class='choose_bg'>
+        <svg id='comp-choose-1eb24dfecc9e8dea-bg-correct' t="1724024892870" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1486"><path d="M809.386667 169.386667a32 32 0 0 1 45.226666 0l106.666667 106.666666a32 32 0 0 1 0 45.226667l-533.333333 533.333333a32 32 0 0 1-45.226667 0l-320-320a32 32 0 0 1 0-45.226666l106.666667-106.666667a32 32 0 0 1 45.226666 0l190.72 190.72 404.053334-404.053333z m22.613333 67.84l-404.053333 404.053333a32 32 0 0 1-45.226667 0L192 450.56 130.56 512l274.773333 274.773333L893.44 298.666667 832 237.226667z" fill="#3fb950"></path></svg>
+        <svg id='comp-choose-1eb24dfecc9e8dea-bg-wrong' viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="48078"><path d="M156.879158 1023.998603l-0.055886-0.055887L0.000699 866.958071l355.064256-355.020944L0.000699 156.914786 156.935045 0l355.064256 355.020944 157.61896 156.230173-0.690202 0.688805 355.069845 355.020944-156.877062 156.925963-355.121541-354.965057L156.935045 1023.944113z m634.329236-634.318058l-0.055887-0.055887L634.269856 232.768553 867.064955 0l156.932949 156.914786L791.260089 389.624658z" fill="#d81e06"></path></svg>
+    </div>
+    <div class='choose_options'><div class='choose_option'><input type='radio' name='comp-choose-1eb24dfecc9e8dea-choice' id='comp-choose-1eb24dfecc9e8dea-choice-Spring' value='Spring'>
+                <label for='comp-choose-1eb24dfecc9e8dea-choice-Spring'>Spring</label>
+            </div><div class='choose_option'><input type='radio' name='comp-choose-1eb24dfecc9e8dea-choice' id='comp-choose-1eb24dfecc9e8dea-choice-20 years ago' value='20 years ago'>
+                <label for='comp-choose-1eb24dfecc9e8dea-choice-20 years ago'>20 years ago</label>
+            </div><div class='choose_option'><input type='radio' name='comp-choose-1eb24dfecc9e8dea-choice' id='comp-choose-1eb24dfecc9e8dea-choice-Fall' value='Fall'>
+                <label for='comp-choose-1eb24dfecc9e8dea-choice-Fall'>Fall</label>
+            </div><div class='choose_option'><input type='radio' name='comp-choose-1eb24dfecc9e8dea-choice' id='comp-choose-1eb24dfecc9e8dea-choice-Winter' value='Winter'>
+                <label for='comp-choose-1eb24dfecc9e8dea-choice-Winter'>Winter</label>
+            </div></div>
+    <div class='choose_footer'>
+        <button class='submit choose_submit' onclick="comp.choose.check('comp-choose-1eb24dfecc9e8dea')">Submit</button>
+    </div>
+    <script>
+        window.comp.choose.answer['comp-choose-1eb24dfecc9e8dea'] = ['20 years ago'];
+    </script>
+</div>
+        </article>
+    </body>
+    </div>
+
+<style>
+    @media (prefers-color-scheme: light) {
+        html {
+            --color-fore-0: #000;
+            --color-back-0: #fff;
+            --color-back-1: #0001;
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        html {
+            --color-fore-0: #fff;
+            --color-back-0: #0d1117;
+            --color-back-1: #fff2;
+        }
+    }
+
+    body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: var(--color-back-0);
+        color: var(--color-fore-0);
+    }
+
+    .navtree {
+        width: 19.1%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 10px;
+        overflow: auto;
+        user-select: none;
+    }
+
+    .article {
+        width: 61.8%;
+        margin-left: 19.1%;
+    }
+
+    li {
+        list-style-type: none;
+        opacity: 0.8;
+        border-radius: 0.375rem;
+        padding: 6px 6px 6px 20;
+        margin: 0 10px;
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    li:hover {
+        opacity: 1;
+        background-color: var(--color-back-1);
+    }
+
+    li.collapsed>ul {
+        display: none;
+    }
+
+    li.url {
+        cursor: pointer;
+    }
+    li.url::after {
+        content: "\E7C3";
+        font-family: 'MDL2';
+        margin-left: 10px;
+        font-size: 0.8em;
+    }
+
+    @font-face {
+        font-family: 'MDL2';
+        src: url('https://www.microsoft.com/mwf/_h/v3.54/mwf.app/fonts/mwfmdl2-v3.54.woff');
+    }
+</style>
+<script>
+    function goto_url(url) {
+        window.location.href = url;
+    }
+    function expand_navt(li) {
+        if (li.classList.contains('collapsed')) {
+            li.classList.remove('collapsed');
+        } else {
+            li.classList.add('collapsed');
+        }
+    }
+</script>
