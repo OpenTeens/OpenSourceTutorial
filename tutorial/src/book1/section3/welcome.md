@@ -1,15 +1,14 @@
 # Hello world
 ## Chapter 1: Introduction
-This is the introduction to the document.
+Hello, here's S3.
 
 -----choose-----
-What is the answer to the universe?
+Which of the following is same as {x|x is a natural number and x < 5}?
 
-- [ ] 41
-- [*] 42
-- [ ] 43
-- [ ] 44
+- [ ] {1, 2, 3, 4}
+- [*] {0, 1, 2, 3, 4}
+- [*] {x|x ∈ N, x < 5}
+- [ ] {x|x ∈ N+, x < 5.2283}
 -----choose-----
 
-## Chapter 2: Conclusion
-This is the conclusion to the document.
+math is fun.
