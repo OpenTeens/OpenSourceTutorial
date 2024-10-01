@@ -1,10 +1,5 @@
 import json
 import jinja2
-import os
-
-
-print(os.getcwd())
-print(os.listdir())
 
 
 map_json = json.load(open("tutorial/build/map.json"))
@@ -26,7 +21,6 @@ for name in map_json:
 
         return tree
 
-
     tree = parse_map_json(map_json)
 
     # cut tree
@@ -36,7 +30,6 @@ for name in map_json:
             tree = tree[name[i]]
 
     nav_tree_html = ""
-
 
     def render_nav_tree(tree, depth=0):
         global nav_tree_html
@@ -53,7 +46,6 @@ for name in map_json:
                 )
                 render_nav_tree(value, depth + 1)
                 nav_tree_html += "</ul></li>"
-
 
     # print(tree)
     render_nav_tree(tree)

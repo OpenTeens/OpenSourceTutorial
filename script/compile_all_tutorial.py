@@ -2,6 +2,12 @@ import os
 import hashlib
 import json
 
+
+print(os.getcwd())
+print(os.listdir())
+
+
+
 all_tutorials = []
 for root, dirs, files in os.walk("tutorial/src"):
     for file in files:
